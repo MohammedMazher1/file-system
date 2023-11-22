@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    font-family: sans-serif;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+        margin: auto;
+    }
+}
+
+/* medium*/
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+        margin:auto ;
+
+    }
+}
+
+/* large*/
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+        margin: auto;
+    }
+}
+/* start navigation style */
+header{
+    background-color:#313175; ;
+}
+nav .container{
+    background-color: rgb(49, 49, 117);
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+}
+nav .container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .container div span{
+    margin: 0 10px;
+}
+nav .container div h1{
+    font-size: 25px;
+}
+main section.folders{
+    padding: 50px 10px;
+    display: flex;
+    background-color: #eee;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+main{
+   background-color: #40404dbb;
+   height: 100vh;
+}
+main section.folders div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin-bottom: 30px;
+}
+main section.folders div a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+main section.folders div a .icon{
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: rgb(163, 94, 4);
+}
+main section.folders div span.title{
+    font-weight: bold;
+    font-size: 14px;
+    opacity: 0.8;
+}
+.fa-plus:hover{
+    transform: scale(1.5);
+}
+header nav .container .createDiv{
+    position: relative;
+}
+.createDiv .createFolder{
+    position: absolute;
+    padding: 10px;
+    background-color: rgb(64, 64, 107);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    top: 100%;
+    border-radius:0 0 10px 10px;
+    transition: all 1s ease;
+    display: none;
+}
+.createFolder table{
+    text-align: center;
+}
+.createFolder table input[type="text"]{
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    margin: 10px 0;
+}
+.createFolder table #submit{
+    padding: 5px 10px;
+    background-color: #eee;
+    border: 1px solid rgb(143, 91, 91);
+    border-radius: 5px;
+    background-color: rgb(25, 25, 70);
+    color:white;
+}
+
+
+
+
