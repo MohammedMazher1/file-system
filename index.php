@@ -35,6 +35,7 @@
 </head>
 <body>
     <header>
+
         <nav>
             <div class="container">
                 <div>
@@ -66,13 +67,14 @@
                         if(is_dir($root.'/'.$file) == true)
                         {    
                         ?> 
+
                         <div>
-                            <a href='<?php echo '/folders/?root='.$root.'&file='.$file?>' ><span class="fa fa-folder icon"></span></a>
+                            <a href='<?php echo '/foldersSystem/?root='.$root.'&file='.$file?>' ><span class="fa fa-folder icon"></span></a>
                             <span class="title"><?php echo $file ?></span>
                         </div>
                         <?php } else { ?>   
                             <div>
-                            <a href='<?php echo '/folders/?root='.$root.'&file='.$file?>'><span class="fa fa-file icon"></span></a>
+                            <a href='<?php echo '/foldersSystem/?root='.$root.'&file='.$file?>'><span class="fa fa-file icon"></span></a>
                             <span class="title"><?php echo $file ?></span>
                             </div>      
                         <?php } ?>
